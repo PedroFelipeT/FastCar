@@ -186,7 +186,7 @@ public class FuncoesServicos extends javax.swing.JFrame {
     }//GEN-LAST:event_btnOsActionPerformed
 
     private void btnVendaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVendaActionPerformed
-        VendaPeca vendapeca = new VendaPeca();
+        Venda vendapeca = new Venda();
         vendapeca.setAuxControle(auxControle);
         vendapeca.setVisible(true);
         dispose();

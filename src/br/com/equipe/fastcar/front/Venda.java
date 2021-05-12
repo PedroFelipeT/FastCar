@@ -29,7 +29,7 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author Pedro
  */
-public class VendaPeca extends javax.swing.JFrame {
+public class Venda extends javax.swing.JFrame {
 
     ArrayList<Peca> refPecaAux = new ArrayList();
     AuxControle auxControle = new AuxControle();
@@ -39,7 +39,7 @@ public class VendaPeca extends javax.swing.JFrame {
     boolean confirmacao = false;
     double arredondarValor;
 
-    public VendaPeca() {
+    public Venda() {
         initComponents();
     }
 
@@ -734,20 +734,21 @@ public class VendaPeca extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(VendaPeca.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Venda.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(VendaPeca.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Venda.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(VendaPeca.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Venda.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(VendaPeca.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Venda.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new VendaPeca().setVisible(true);
+                new Venda().setVisible(true);
             }
         });
     }
